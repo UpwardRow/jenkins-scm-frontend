@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Build setup.sh') {
             steps {
-                echo "I will add it to my todo"
+                sh "./setup.sh"
             }
         }
-        stage('Test') {
+        /* stage('Test') {
             steps {
                 echo "I will add it to my todo"
             }
@@ -15,6 +15,6 @@ pipeline {
             steps {
                 echo "I will add it to my todo"
             }
-        }
+        } */
     }
 }
